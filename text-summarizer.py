@@ -5,7 +5,15 @@ from nltk.corpus import stopwords
 from nltk.cluster.util import cosine_distance
 import numpy as np
 import networkx as nx
+
+# For reading files from Google Collab
+# from nltk.corpus import PlaintextCorpusReader
  
+#corpus_root = '/content'
+#corpus = PlaintextCorpusReader(corpus_root, '.*')
+#corpus.fileids()
+
+
 def read_article(file_name):
     file = open(file_name, "r")
     filedata = file.readlines()
